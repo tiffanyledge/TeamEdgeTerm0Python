@@ -24,7 +24,7 @@ print("------------------- CHALLENGE 1 -------------------")
 empty_list = []
 
 #this list has 5 Strings. We can print it:
-names = ["Sam", "Wolf", "Alex", "Bella", "Shaquan"]
+names = ["Julian", "Wolf", "Alex", "Steph", "Alessandro"]
 print("names: " + str(names))  
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
