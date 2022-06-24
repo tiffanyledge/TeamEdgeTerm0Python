@@ -102,9 +102,9 @@ weather = "rainy"
 print("------------------- Challenge 4 -------------------")
 
 # Prompt the user to enter the day of the week (1-7 representing Monday - Sunday)
-    # Write a set of conditionals that will take a number from 1 to 7 
-    # and print out the corresponding day of the week. 
-    # Make sure to add a statement that accounts of any numbers out of range! */
+# Write a set of conditionals that will take a number from 1 to 7 
+# and print out the corresponding day of the week. 
+# Make sure to add a statement that accounts for any numbers out of range! 
 
 
 
@@ -118,22 +118,20 @@ print("------------------- Challenge 4 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 1 -------------------")
+print("------------------- Challenge 5 -------------------")
 
 # A leap year is a calendar year that contains an additional day added 
-   # to keep the calendar year synchronized with the astronomical year or seasonal year.
-   # To calculate if a specific year is/was a leap year, you can follow the following steps:
+# to keep the calendar year synchronized with the astronomical year or seasonal year.
+# To calculate if a specific year is/was a leap year, you can follow the following steps:
      # 1. If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
      # 2. If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
      # 3. If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
      # 4. The year is a leap year (it has 366 days).
      # 5. The year is not a leap year (it has 365 days).
 
-  # Those are a lot of conditions...
-
-  # Your challenge is to translate the steps above into conditionals which will evaluate if the 
-  # year stored in a variable is/was a leap year.
-
+# Those are a lot of conditions...
+# Your challenge is to translate the steps above into conditionals which will evaluate if the 
+# year stored in a variable is/was a leap year.
 
 
 
