@@ -1,7 +1,5 @@
 import random
 
-options = ["rock", "paper", "scissors"]
-
 print("Let's play Rock Paper Scissors!")
 
 # Challenge
@@ -9,13 +7,12 @@ print("Let's play Rock Paper Scissors!")
 
 while True:
     userInput = input("Do you want to play rock, paper, or scissors?\n").lower()
-    randomSelection = random.randint(0, 2)
-    computerSelection = options[randomSelection]
+    computerSelection = random.choice(["rock", "paper", "scissors"])
 
     print(f"You played: {userInput} and the computer played: {computerSelection}")
     if userInput == computerSelection:
         print("It's a tie!")
-    elif((userInput = "rock" and computerSelection = "paper") or (userInput = "paper" and computerSelection = "scissors") or (userInput = "scissors" and computerSelection = "rock")):
+    elif((userInput = "rock" and computerSelection = "paper") or (userInput = "paper" and computerSelection = "scissors") or (userInput = "rock" and computerSelection = "scissors")):
         console.log("You Lose!")
     elif:
         console.log("You Win!")
