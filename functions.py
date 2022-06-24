@@ -77,7 +77,7 @@ print("------------------- Challenge 2 -------------------")
 
 # **** Challenge 2: Problem 2 ****
 
-# Write a function called makes_10 that takes two numbers, a and b, and returns true if one if them is 10 or if their sum is 10.
+# Write a function called makes_10 that takes two numbers, a and b, and returns true if one of them is 10 or if their sum is 10.
 
 	# Examples:
 		# makes_10(9, 10) → True
@@ -123,7 +123,7 @@ print("------------------- Challenge 2 -------------------")
 
 # **** Challenge 2: Problem 4 ****
 
-# Write a function that will tell if you if you received a speeding ticket.
+# Write a function that will tell you if you received a speeding ticket.
 # You are driving a little too fast, and a police officer stops you. 
 
 # To compute the result, encoded as a number value: 
