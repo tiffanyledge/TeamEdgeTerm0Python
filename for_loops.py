@@ -37,7 +37,7 @@ colors = ['red' , 'violet' , 'cyan' , 'pink' , 'lime' , 'white' , 'yellow', 'bla
 for x in colors:
     print("The color is: " + x)
 
-#-->TODO: Declare a list with at least 10 animals. You provide the animals.
+#-->TODO: Declare a list with at least 5 animals. You provide the animals.
 animals = []
 
 #-->TODO: Print all the animals in the array with a for loop. 
@@ -47,7 +47,7 @@ animals = []
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
 
 
-#This makes a random number between 0-50
+#The line below makes a random number between 0-50 and assigns it to the random variable
 random = random.randint(0, 50)
 
 #this if/else statement checks if the number is even using the modulo operator (%)
@@ -56,10 +56,10 @@ if random % 2 == 0:
 else:
     print(str(random) + " is odd!")
 
-#-->TODO: Write a function that counts BACKWARDS from 100 and prints only odd numbers
+#-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
 
 
-#-->TODO: Write a function that counts BACKWARDS from the given random number and prints only even numbers
+#-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
 
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
@@ -69,15 +69,14 @@ color = input('Type a one word color and see if it is one of my favorite colors!
 if color in colors:
     print("Yes, that color is a fav")
 else:
-    print("No, that color is not one my favorites")
+    print("No, that color is not one of my favorites")
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
 
 
-#-->TODO Prompt the user to "Guess" if an element is present. Store their response in a variable
 
-
-#-->TODO Write function to prompt the user and see if the element is present. If so, print CONGRATULATIONS!
+#-->TODO Write function to prompt the user to "Guess" if an element is present in your list. Store their response in a variable. 
+#   --> If their guess is in your list, print CONGRATULATIONS!
 
 
 #-->TODO Call your function.
@@ -90,7 +89,7 @@ print("------------------- CHALLENGE 5 : Nested ------------------")
 big_word = "antidisestablishmentarianism"
 print(f"{big_word} has {len(big_word)} letters")
 
-#this is how you can nest for loops, one insde the other! These loop through all the colors, and then through all the characters in the color
+#this is how you can nest for loops, one inside the other! These loop through all the colors, and then through all the characters in the color
 for color in colors:
 #for all the colors:
     print(color)
