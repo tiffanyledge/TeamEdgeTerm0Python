@@ -20,7 +20,7 @@ from time import sleep
 
 print("-------------------  SUPERHERO !!  -------------------")
 
-DELAY = 3
+DELAY = 10
 DAMAGE_LIMIT = 5
 MAJOR_BLOW = DAMAGE_LIMIT -2
 LIVES_TOP_RANGE = 60
@@ -42,15 +42,27 @@ class Superhero:
     global game_is_on
     #COMMENT 2 ....
     if self.is_alive and enemy.is_alive: 
-        print("  \n   ")
         damage = random.randint(0,DAMAGE_LIMIT)         
-        enemy.lives = enemy.lives[:len(enemy.lives) - damage]
+        enemy.lives = enemy.lives[:len(enemy.lives) - damage] 
         
         if damage >= MAJOR_BLOW:
-          print("Major Blow!")
+          
+          print(f"Major Blow to {enemy.name} ! Damage: {damage} \n")
+
+          cry = random.choice(enemy.cries)
+          print(f"{enemy.name} says: {cry}")
           #COMMENT 3....  
-          print(f"{self.name} 💬 \: {self.taunts[random.randint(0,len(self.taunts) -1)]} \n")
-          print(f"{self.name} 💥X {damage} {enemy.name} {enemy.lives} \: {len(enemy.lives)} \n")
+          
+          print(f"{enemy.name}  HP Left:")
+          hit_points_left = ""
+          for hp in enemy.lives:
+            
+            hit_points_left +=hp
+          print(hit_points_left + str(len(enemy.lives)) + "\n")
+            
+
+        else:
+          print(f'No damange! by {self.name} \n')
 
         if len(enemy.lives) <= 0:
           #COMMENT 4....
@@ -91,11 +103,12 @@ joker.cries = ["Aaaa!" , "Goh!" , "Hmph!" ,"You will pay for self"]
 joker.fill_health()
 
 
-print(f"{joker.name} :  {joker.lives} - {len(joker.lives)}")
-print(f"{batman.name} : {batman.lives} -  {len(batman.lives)}")
-print(f"{batman.name} 💬 {batman.taunts[1]}  \n")
-print(f"{joker.name} 💬 {joker.taunts[1]}  \n")
+print(f"{joker.name} : HPs  - {len(joker.lives)}")
+print(f"{batman.name} : HPs -  {len(batman.lives)}")
+print(f"{batman.name} 💬 {batman.taunts[random.randint(0,len(batman.taunts) -1)]}  \n")
+print(f"{joker.name} 💬 {joker.taunts[random.randint(0,len(joker.taunts) -1)]}  \n")
 
+ 
 
 #COMMENT 7....
 def fight(a, b):
