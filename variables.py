@@ -9,20 +9,22 @@ print(message)
 
 # -------------------------------------------- 
 # Challenge 1:
+# 
 # Imagine it's the first day of class. (Wait, it is the first day isn't it..Deja vu?) 
 # Everyone's participating in an icebreaker and has to introduce themselves. 
 # It goes something like:
+# (Hint: Remove the # signs in front of the print statements below so your code will run!)
 # -------------------------------------------- 
 
-print("------------------- Challenge 1 -------------------")
+print("\n------------------- Challenge 1 -------------------\n")
 
-print(f"Hi! My name is {name}")
-print(f"I'm in the {grade}th grade.")
-print(f"A fun fact about me is that {funFact}")
+#print(f"Hi! My name is {name}")
+#print(f"I'm in the {grade}th grade.")
+#print(f"A fun fact about me is that {funFact}")
 
 
 # **** Challenge 1: Problem 1 ****
-# Initalize the variables with your response for the three statements above! 
+# Initialize the variables used in the {} with your data for the three statements above! 
 # Hint: Also think about where you would initialize those variables
 
 
@@ -51,7 +53,7 @@ print(f"A fun fact about me is that {funFact}")
 # Write your solution code under each commented problem. 
 # -------------------------------------------- 
 
-print("------------------- Challenge 2 -------------------")
+print("\n------------------- Challenge 2 -------------------\n")
 
 # Here are some variables to get you started
 num1 = 5
@@ -90,7 +92,7 @@ num2 = 10
 # **** Upchallenge! ****
 # Given a variable that stores a number, print the values that come right before and right after.
 # For example, given the number 4, the program should print 3 and 5. 
-# Your code should work if the value of the variable is changed.
+# Your code should work even if the value of the variable is changed.
 
 num = 9
 
