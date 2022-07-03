@@ -15,7 +15,7 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
-print("------------------- Challenge 1 -------------------")
+print("\n------------------- Challenge 1 -------------------\n")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
@@ -51,7 +51,7 @@ print("------------------- Challenge 1 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 2 -------------------")
+print("\n------------------- Challenge 2 -------------------\n")
 
 # **** Challenge 2: Problem 1 ****
 
