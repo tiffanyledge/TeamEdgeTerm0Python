@@ -3,14 +3,14 @@
 # Day 2 Challenges
 # -------------------------------------------- 
 
-message = "Welcome to Day 2.\nToday we are learning about conditionals.\nLet's practice writing some conditionals of our own!"
+message = "\nWelcome to Day 2.\nToday we are learning about conditionals.\nLet's practice writing some conditionals of our own!"
 print(message)
 # -------------------------------------------- 
 
-print("------------------- Challenge 1 -------------------")
+print("\n------------------- Challenge 1 -------------------\n")
 # Can you drive?
    # Prompt the user to enter their age.
-   # Write conditional statements that print out whether you can drive in your city. 
+   # Write conditional statements that print out whether the user is legally allowed to drive in your city. 
 
 
 
@@ -26,12 +26,11 @@ print("------------------- Challenge 1 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 2 -------------------") 
+print("\n------------------- Challenge 2 -------------------\n") 
 
 # Who placed first?
-   # Write conditional statements that checks which is the highest and prints the highest score. 
-   # Hint: Create three variables and assign them random scores. 
-
+   # Create three variables and assign them random scores. 
+   # Write conditional statements that check which is the highest score and prints it.
 
 
 
@@ -44,7 +43,7 @@ print("------------------- Challenge 2 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 3 -------------------")
+print("\n------------------- Challenge 3 -------------------\n")
 
 # One of the most common parts of our daily routine is checking the weather. 
 # Our outfit and accessories are dependent on the temperature and conditions outside. 
@@ -99,7 +98,7 @@ weather = "rainy"
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 4 -------------------")
+print("\n------------------- Challenge 4 -------------------\n")
 
 # Prompt the user to enter the day of the week (1-7 representing Monday - Sunday)
 # Write a set of conditionals that will take a number from 1 to 7 
@@ -118,7 +117,7 @@ print("------------------- Challenge 4 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 5 -------------------")
+print("\n------------------- Challenge 5 -------------------\n")
 
 # A leap year is a calendar year that contains an additional day added 
 # to keep the calendar year synchronized with the astronomical year or seasonal year.
