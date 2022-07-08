@@ -1,4 +1,4 @@
-
+import random
 # -------------------------------------------- 
 # Day 2 Challenges
 # -------------------------------------------- 
@@ -13,15 +13,11 @@ print("\n------------------- Challenge 1 -------------------\n")
    # Write conditional statements that print out whether the user is legally allowed to drive in your city. 
 
 
-
-
-
-
-
-
-
-
-
+age = input ("Enter your age")
+if age >= 18 and age <80:
+   print ("you can drive!")
+else:
+   print ("sorry, you can't drive today!")
 
 
 # -------------------------------------------- 
@@ -33,10 +29,16 @@ print("\n------------------- Challenge 2 -------------------\n")
    # Write conditional statements that check which is the highest score and prints it.
 
 
+1 = (random.randrange(1, 10))
+2 = (random.randrange(1, 10))
+3 = (random.randrange(1, 10))
 
-
-
-
+if one> two and one> three
+   print ("one wins")
+elif two> one and two> three
+   print ("two wins")
+else 
+   print ("three wins")
 
 
 

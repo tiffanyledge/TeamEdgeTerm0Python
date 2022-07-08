@@ -69,10 +69,6 @@ print (num7**2)
 num8 = 576
 print (num8/4)
 
-# **** Challenge 2: Problem 6 ****
-# Store the remainder of the quotient divided by 2 in a variable.
-# Print the remainder.
-
 num9 = 144
 print (num9%2)
 
