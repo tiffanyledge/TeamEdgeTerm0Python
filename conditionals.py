@@ -41,12 +41,9 @@ elif two> one and two> three:
    print ("two wins")
 else:
    print ("three wins")
-
+#good work
 
 # -------------------------------------------- 
-
-
-
 
 
 print("\n------------------- Challenge 3 -------------------\n")
