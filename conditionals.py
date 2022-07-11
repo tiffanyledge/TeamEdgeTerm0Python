@@ -13,7 +13,9 @@ print("\n------------------- Challenge 1 -------------------\n")
    # Write conditional statements that print out whether the user is legally allowed to drive in your city. 
 
 
+
 age = input ("Enter your age")
+age = int(age) 
 if age >= 18 and age <80:
    print ("you can drive!")
 else:
@@ -29,9 +31,9 @@ print("\n------------------- Challenge 2 -------------------\n")
    # Write conditional statements that check which is the highest score and prints it.
 
 
-one = (random.randrange(1, 10))
-two = (random.randrange(1, 10))
-three = (random.randrange(1, 10))
+one = random.randrange(1, 10)
+two = random.randrange(1, 10)
+three = random.randrange(1, 10)
 
 if one> two and one> three:
    print ("one wins")
@@ -63,12 +65,11 @@ print("\n------------------- Challenge 3 -------------------\n")
 
 # Here's a variable to get you started:
 weather = "rainy"
-
-if weather == rainy:
+if weather == "rainy":
    print ("bring an umbrella")
-elif weather = sunny:
+elif weather == "sunny":
    print ("wear a hat and sunglasses")
-else 
+else:
    print ("wear gloves and a scarf")
 
 
@@ -104,13 +105,13 @@ else
 
 weather = "rainy"
 degrees = 30 
-if weather == rainy and degrees == 30:
+if weather == "rainy" and degrees == 30:
    print ("bring an umbrella and a light jacket")
-elif weather == sunny and degrees = 90:
+elif weather == "sunny" and degrees == 90:
    print ("wear a hat and sunglasses")
-elif weather = stormy and degrees = 60:
+elif weather == "stormy" and degrees == 60:
    print ("don't go outside")
-else 
+else:
    print ("wear gloves and a scarf")
 
 
@@ -164,11 +165,11 @@ print("\n------------------- Challenge 5 -------------------\n")
 # Your challenge is to translate the steps above into conditionals which will evaluate if the 
 # year stored in a variable is/was a leap year.
 
-year = int(input{"enter year\n"})
-if year%==0:
+year = int(input("enter year\n"))
+if year%4==0:
    if year%100==0:
       if year%400==0:
-         print("this is a leap year, it has 366 days"):
+         print("this is a leap year, it has 366 days")
       else:
          print("this is not a leap year, it only has 365 days")
    else:

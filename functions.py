@@ -102,12 +102,11 @@ print("\n------------------- Challenge 2 -------------------\n")
 		# sum_double(3, 2) → 5
 		# sum_double(2, 2) → 8
 
-# -------------------------------------------- 
+# ----------------------------------------------
 
 def sum_double(a,b):
 
-
-return a+b
+	return a+b
 if a==b:
 	return (a+b)*2
 
@@ -135,7 +134,7 @@ sum_double(7,20)
 
 
 def makes_10(a,b):
-	if a=10 or b=10 or a+b=10:
+	if a==10 or b==10 or a+b==10:
 		return True
 	else:
 		return False
@@ -163,11 +162,26 @@ makes_10(10,10)
 
 # -------------------------------------------- 
 
+def alarm(a,b):
+	if (a == 1 or a == 2 or a == 3 or a == 4 or a == 5) and b == False:
+		print("7:00")
+	elif (b == 0 or b == 6) and a == False:
+		print("10:00")
+	elif (a == 1 or a == 2 or a == 3 or a == 4 or a == 5) and b == True:
+		print("10:00")
+	else:
+		print ("off")
 
 
 
 
-
+0="sunday"
+1="monday"
+2="tuesday"
+3="wenesday"
+4="thursday"
+5="friday"
+6="saturday"
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
