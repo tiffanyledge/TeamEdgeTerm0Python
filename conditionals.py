@@ -14,6 +14,7 @@ print("\n------------------- Challenge 1 -------------------\n")
 
 
 age = input ("Enter your age")
+#turn strings to int, you can't compare numerical values without doing this
 if age >= 18 and age <80:
    print ("you can drive!")
 else:
@@ -39,12 +40,9 @@ elif two> one and two> three:
    print ("two wins")
 else:
    print ("three wins")
-
+#good work
 
 # -------------------------------------------- 
-
-
-
 
 
 print("\n------------------- Challenge 3 -------------------\n")
@@ -67,8 +65,10 @@ weather = "rainy"
 if weather == rainy:
    print ("bring an umbrella")
 elif weather = sunny:
+#use == to check and compare values. = is to set, == is to check
    print ("wear a hat and sunglasses")
-else 
+else
+#when using if, elif and else,you must add a : at the end, ex. if x>1:
    print ("wear gloves and a scarf")
 
 
@@ -106,11 +106,12 @@ weather = "rainy"
 degrees = 30 
 if weather == rainy and degrees == 30:
    print ("bring an umbrella and a light jacket")
-elif weather == sunny and degrees = 90:
+elif weather == sunny and degrees = 90: #== vs =
    print ("wear a hat and sunglasses")
-elif weather = stormy and degrees = 60:
+elif weather = stormy and degrees = 60: #== vs =
    print ("don't go outside")
-else 
+else #use colons for these statements
+
    print ("wear gloves and a scarf")
 
 
