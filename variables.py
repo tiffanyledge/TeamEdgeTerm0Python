@@ -63,13 +63,10 @@ num6 = 3
 num7= num5*num6 
 print (num7)
 
-num7=24
 print (num7**2)
 
-num8 = 576
 print (num8/4)
 
-num9 = 144
 print (num9%2)
 
 # **** Upchallenge! ****

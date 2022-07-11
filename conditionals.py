@@ -29,21 +29,23 @@ print("\n------------------- Challenge 2 -------------------\n")
    # Write conditional statements that check which is the highest score and prints it.
 
 
-1 = (random.randrange(1, 10))
-2 = (random.randrange(1, 10))
-3 = (random.randrange(1, 10))
+one = (random.randrange(1, 10))
+two = (random.randrange(1, 10))
+three = (random.randrange(1, 10))
 
-if one> two and one> three
+if one> two and one> three:
    print ("one wins")
-elif two> one and two> three
+elif two> one and two> three:
    print ("two wins")
-else 
+else:
    print ("three wins")
 
 
-
-
 # -------------------------------------------- 
+
+
+
+
 
 print("\n------------------- Challenge 3 -------------------\n")
 
@@ -61,6 +63,19 @@ print("\n------------------- Challenge 3 -------------------\n")
 
 # Here's a variable to get you started:
 weather = "rainy"
+
+if weather == rainy:
+   print ("bring an umbrella")
+elif weather = sunny:
+   print ("wear a hat and sunglasses")
+else 
+   print ("wear gloves and a scarf")
+
+
+
+
+
+
 
 
 
@@ -87,12 +102,16 @@ weather = "rainy"
    # Make sure to account for at least three different temperatures!
    # Hint: You will need another variable to keep track of the temperature.
 
-
-
-
-
-
-
+weather = "rainy"
+degrees = 30 
+if weather == rainy and degrees == 30:
+   print ("bring an umbrella and a light jacket")
+elif weather == sunny and degrees = 90:
+   print ("wear a hat and sunglasses")
+elif weather = stormy and degrees = 60:
+   print ("don't go outside")
+else 
+   print ("wear gloves and a scarf")
 
 
 
@@ -107,10 +126,21 @@ print("\n------------------- Challenge 4 -------------------\n")
 # and print out the corresponding day of the week. 
 # Make sure to add a statement that accounts for any numbers out of range! 
 
-
-
-
-
+day = input("enter the day")
+if day == 1:
+   print ("monday")
+elif day == 2:
+   print ("tuesday")
+elif day == 3:
+   print ("wenesday")
+elif day == 4:
+   print ("thursday")
+elif day == 5:
+   print ("friday")
+elif day == 6:
+   print ("saturday")
+else:
+   print ("sunday")
 
 
 
@@ -134,8 +164,16 @@ print("\n------------------- Challenge 5 -------------------\n")
 # Your challenge is to translate the steps above into conditionals which will evaluate if the 
 # year stored in a variable is/was a leap year.
 
-
-
-
+year = int(input{"enter year\n"})
+if year%==0:
+   if year%100==0:
+      if year%400==0:
+         print("this is a leap year, it has 366 days"):
+      else:
+         print("this is not a leap year, it only has 365 days")
+   else:
+      print("this is a leap year, it has 366 days")
+else:
+   print("this is not a leap year, it only has 365")
 
 
