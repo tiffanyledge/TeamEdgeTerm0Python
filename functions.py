@@ -106,9 +106,10 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 def sum_double(a,b):
 
-	return a+b
-if a==b:
-	return (a+b)*2
+
+	if a==b:
+		return (a+b)*2
+		return a+b
 
 sum_double(7,20)
 
@@ -175,13 +176,6 @@ def alarm(a,b):
 
 
 
-0="sunday"
-1="monday"
-2="tuesday"
-3="wenesday"
-4="thursday"
-5="friday"
-6="saturday"
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
@@ -202,7 +196,14 @@ def alarm(a,b):
 
 # -------------------------------------------- 
 
+def ticket(speed):
 
+	if speed <= 60:
+		print ("0")
+	elif speed <= 61 or speed <= 80:
+		print ("1")
+	else:
+		print ("2")
 
 
 
