@@ -41,8 +41,13 @@
 # Remember: Your user should be able to order at least 3 items (a drink, meal, and dessert item). 
 
 # --------------------------------------------
-
-
+Liquid1 = "Lemonade"
+Liquid2 = "Iced Tea"
+Solid1 = "Chicken Sandwich"
+Solid2 = "Chicken Tenders"
+Solid3 = "Chicken Salad"
+Sweet1 = "Chip"
+Sweet2 = "Gummy Bear"
 
 # -------------------------------------------- 
 
@@ -54,9 +59,18 @@
 
 # --------------------------------------------
 
+print ("Menu")	
 
-
-
+print ("Drinks")
+print ("1. Lemonade 		$3.00")
+print ("2. Iced Tea		$2.75")
+print ("Food")
+print ("3. Chicken Sandwich 	$7.75")
+print ("4. Chicken Tenders	$5.00")
+print ("5. Chicken Salad	$10.99")
+print ("Snacks")
+print ("6. Chips		$1.00")
+print("7. Gummy Bears		$2.00")
 
 
 # -------------------------------------------- 
@@ -72,15 +86,55 @@
 
 # --------------------------------------------
 
+drink=""
+drink_cost=0
+food=""
+food_cost=0
+sweet=""
+sweet_cost=0
+
+print ("Welcome to Foody Foodies!")
+def get_drinks ():
+	question = input("What drink would you like to order? (Enter 1 or 2)")
+	global drink_cost
+	if  question == "1":
+		drink = Liquid1
+		drink_cost = 3.00
+	elif question == "2":
+		drink = Liquid2
+		drink_cost = 2.75
+def get_food ():
+	question = input("What food would you like to order? (Enter 3,4 or 5)")
+	global food_cost
+	if question == "3":
+		food = Solid1
+		food_cost = 7.75
+	elif question == "4":
+		food = Solid2
+		food_cost = 5.00
+	elif Solid3 == "5":
+		food = Solid3
+		food_cost = 10.99
+def get_snack ():
+	question = input("What snack would you like? (Enter 6 or 7)")
+	global sweet_cost
+	if question == "6":
+		sweet = Sweet1
+		sweet_cost = 1.00
+	elif question == "7":
+		sweet = Sweet2
+		sweet_cost = 2.00
+
+	
 
 
+get_drinks()
+get_food()
+get_snack()
 
+price =  food_cost + drink_cost + sweet_cost
 
-
-
-
-
-
+print (f"Your total is {food_cost + drink_cost + sweet_cost}")
 
 
 # -------------------------------------------- 
@@ -96,12 +150,31 @@
 # Remember! Functions are meant to be reusable, so write a function that will work when called for each person!
 
 # -------------------------------------------- 
+# Total=Liquid1 + Liquid2 + Solid1 + Solid2 + Solid3 + Sweet1 + Sweet2 
+# print (Total)
 
 
+#Liquid1 = "$3.00"
+#Liquid2 = "$2.75"
+#Solid1 = "$7.75"
+#Solid2 = "$5.00"
+#Solid3 = "$10.99"
+#Sweet1 = "$1.00"
+#Sweet2 = "$2.00"
 
 
+tax = 0.08875
+tip = input ("What percent tip would you like to give? (10, 15, 20)")
+def cost_order():
+	price = food_cost + drink_cost + sweet_cost
+	extra_tax = price*tax
+	subtotal = extra_tax + price
+	tip_fraction = int(tip)/100
+	total = subtotal*tip_fraction
 
-
+cost_order()
+print (total)
+	
 
 
 
