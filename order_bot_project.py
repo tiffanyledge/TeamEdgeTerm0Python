@@ -31,6 +31,9 @@
 
 # -------------------------------------------- 
 
+subtotal = 0
+tip_fraction = 0
+total = 0
 
 # -------------------------------------------- 
 
@@ -61,14 +64,14 @@ Sweet2 = "Gummy Bear"
 
 print ("Menu")	
 
-print ("Drinks")
+print ("Drinks:")
 print ("1. Lemonade 		$3.00")
 print ("2. Iced Tea		$2.75")
-print ("Food")
+print ("Food:")
 print ("3. Chicken Sandwich 	$7.75")
 print ("4. Chicken Tenders	$5.00")
-print ("5. Chicken Salad	$10.99")
-print ("Snacks")
+print ("5. Chicken Salad	$6.75")
+print ("Snacks:")
 print ("6. Chips		$1.00")
 print("7. Gummy Bears		$2.00")
 
@@ -96,6 +99,7 @@ sweet_cost=0
 print ("Welcome to Foody Foodies!")
 def get_drinks ():
 	question = input("What drink would you like to order? (Enter 1 or 2)")
+	global drink
 	global drink_cost
 	if  question == "1":
 		drink = Liquid1
@@ -105,6 +109,7 @@ def get_drinks ():
 		drink_cost = 2.75
 def get_food ():
 	question = input("What food would you like to order? (Enter 3,4 or 5)")
+	global food
 	global food_cost
 	if question == "3":
 		food = Solid1
@@ -117,6 +122,7 @@ def get_food ():
 		food_cost = 10.99
 def get_snack ():
 	question = input("What snack would you like? (Enter 6 or 7)")
+	global sweet
 	global sweet_cost
 	if question == "6":
 		sweet = Sweet1
@@ -132,9 +138,10 @@ get_drinks()
 get_food()
 get_snack()
 
+
 price =  food_cost + drink_cost + sweet_cost
 
-print (f"Your total is {food_cost + drink_cost + sweet_cost}")
+print (f"Your total is {price}")
 
 
 # -------------------------------------------- 
@@ -163,20 +170,20 @@ print (f"Your total is {food_cost + drink_cost + sweet_cost}")
 #Sweet2 = "$2.00"
 
 
+
 tax = 0.08875
-tip = input ("What percent tip would you like to give? (10, 15, 20)")
+tip = input ("What percent tip would you like to give? (15, 20, 25)")
 def cost_order():
-	price = food_cost + drink_cost + sweet_cost
-	extra_tax = price*tax
-	subtotal = extra_tax + price
-	tip_fraction = int(tip)/100
-	total = subtotal*tip_fraction
+	global subtotal
+	global tip_fraction
+	global total
+	extra_tax = (round(price*tax,2))
+	subtotal = (round(extra_tax + price,2))
+	tip_fraction = (round(int(tip)/100,2))
+	total = (round((subtotal*tip_fraction) + subtotal, 2))
+	print(total)
 
 cost_order()
-print (total)
-	
-
-
 
 
 
@@ -196,9 +203,25 @@ print (total)
 
 
 # -------------------------------------------- 
+def food_choice():
+	print (f"{drink} = {drink_cost}")
+	
+	print (f"{food} = {food_cost}")
+	
+	print (f"{sweet} = {sweet_cost}")
 
 
 
+
+def receipt():
+	print ("This is your receipt:")
+	food_choice()
+	print (f"Subtotal:{subtotal}")
+	print (f"Tax:{tax}")
+	print (f"Tip:{tip_fraction}")
+	print (f"Total:{total}")
+	print ("Bye!")
+receipt()
 
 # -------------------------------------------- 
 
