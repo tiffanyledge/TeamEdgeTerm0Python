@@ -168,6 +168,10 @@ print(f"There are {how_many_cities} ciites in my list")
 
 #-->TODO: Print out the number of friends, or other items from other lists using string literals as above
 
+print(f"I have {len(friends)} friends")
+
+how_many_cities = len(cities)
+print(f"There are {how_many_cities} cities in my list")
 
 #The len() function is key, especially in conditionals or to simply count how many times to do something.
 
@@ -177,6 +181,11 @@ else:
     print("I need more numbers in my list!!!")
 
 #-->TODO: Write another if/else statement to check the size of your songs list. If you have 5 of less, add two more songs!
+
+if len(songs) > 3:
+    print("There are more than 3 songs on my list")
+else:
+    print("I need more songs on my list")
 
 
 print("------------------- CHALLENGE 6 -------------------")
@@ -194,12 +203,21 @@ print("letter by letter: " + str(word_split_list))
 
 #-->TODO: Change the name of the person who is late in this sentence and print it.
 split_me = "I heard Alex was late to class today."
-
+split_me = split_me.split()
+split_me[2] = "nappy"
+print(split_me)
 #-->TODO: Add an exclamation mark to this sentence using split() and append(), then print. (yes, there are other ways, but...)
 make_me_exciting = "What a wonderful day"
+make_me_exciting = make_me_exciting.split()
+make_me_exciting.append("!")
+print(make_me_exciting)
 
 #We can also join our list elements into a string using.....join()!
 rejoined = " ".join(boring_list)  #joins it using spaces
 print('back in one piece: ' + rejoined)
 
 #-->TODO:  Finally, put the split_me sentence today and the make_me_exciting strings back together and print. You should see a string
+rejoined  = " ".join(split_me+make_me_exciting)
+print('sentence:' + rejoined)
+
+
