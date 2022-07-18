@@ -42,7 +42,11 @@ def test_prime(n):
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
 
-
+num_1 = 0
+while num_1 <= 100:
+  if test_prime(num_1):
+    print(num_1)
+  num_1 += 1
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
@@ -51,6 +55,12 @@ items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" 
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
 
+item = 0
+while item < len(items):
+  if items[item] == "key":
+    print("Found the key!")
+  item += 1 
+  
 
 
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
@@ -61,10 +71,10 @@ print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 #-->TODO: Make me count  2, 4, 6,..., 50
 
 def even_numbers_to_fifty():
-    num = 50
+    num = 0
     while num < 50:
-        print("number: " + str(num))
-
+      num += 2
+      print("number: " + str(num))
 even_numbers_to_fifty()
 
 #-->TODO: Make this design  below
@@ -93,6 +103,13 @@ def pattern():
         print(my_list)
         index += 1
 
+    index = 5
+    while index >= 0:
+        my_list.pop(index)
+        print(my_list)
+        index -= 1
+
+
 pattern()
 
 
@@ -100,7 +117,7 @@ print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 
 
 
-#-->TODO: Make a Math Quiz that asks two random numbers (between 0 and 100 to make it easy).
+#-->TODO: Make a Math Quiz that adds two random numbers (between 0 and 100 to make it easy).
 #         The user enters the answer. If wrong, keep prompting. If correct, say congrats!!
 #         Use this handy boolean to get you started! You will need input()!
 
