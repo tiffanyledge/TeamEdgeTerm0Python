@@ -31,6 +31,9 @@
 
 # -------------------------------------------- 
 
+subtotal = 0
+tip_fraction = 0
+total = 0
 
 # -------------------------------------------- 
 
@@ -41,8 +44,13 @@
 # Remember: Your user should be able to order at least 3 items (a drink, meal, and dessert item). 
 
 # --------------------------------------------
-
-
+Liquid1 = "Lemonade"
+Liquid2 = "Iced Tea"
+Solid1 = "Chicken Sandwich"
+Solid2 = "Chicken Tenders"
+Solid3 = "Chicken Salad"
+Sweet1 = "Chip"
+Sweet2 = "Gummy Bear"
 
 # -------------------------------------------- 
 
@@ -54,9 +62,18 @@
 
 # --------------------------------------------
 
+print ("Menu")	
 
-
-
+print ("Drinks:")
+print ("1. Lemonade 		$3.00")
+print ("2. Iced Tea		$2.75")
+print ("Food:")
+print ("3. Chicken Sandwich 	$7.75")
+print ("4. Chicken Tenders	$5.00")
+print ("5. Chicken Salad	$6.75")
+print ("Snacks:")
+print ("6. Chips		$1.00")
+print("7. Gummy Bears		$2.00")
 
 
 # -------------------------------------------- 
@@ -72,15 +89,59 @@
 
 # --------------------------------------------
 
+drink=""
+drink_cost=0
+food=""
+food_cost=0
+sweet=""
+sweet_cost=0
+
+print ("Welcome to Foody Foodies!")
+def get_drinks ():
+	question = input("What drink would you like to order? (Enter 1 or 2)")
+	global drink
+	global drink_cost
+	if  question == "1":
+		drink = Liquid1
+		drink_cost = 3.00
+	elif question == "2":
+		drink = Liquid2
+		drink_cost = 2.75
+def get_food ():
+	question = input("What food would you like to order? (Enter 3,4 or 5)")
+	global food
+	global food_cost
+	if question == "3":
+		food = Solid1
+		food_cost = 7.75
+	elif question == "4":
+		food = Solid2
+		food_cost = 5.00
+	elif Solid3 == "5":
+		food = Solid3
+		food_cost = 10.99
+def get_snack ():
+	question = input("What snack would you like? (Enter 6 or 7)")
+	global sweet
+	global sweet_cost
+	if question == "6":
+		sweet = Sweet1
+		sweet_cost = 1.00
+	elif question == "7":
+		sweet = Sweet2
+		sweet_cost = 2.00
+
+	
 
 
+get_drinks()
+get_food()
+get_snack()
 
 
+price =  food_cost + drink_cost + sweet_cost
 
-
-
-
-
+print (f"Your total is {price}")
 
 
 # -------------------------------------------- 
@@ -96,14 +157,33 @@
 # Remember! Functions are meant to be reusable, so write a function that will work when called for each person!
 
 # -------------------------------------------- 
+# Total=Liquid1 + Liquid2 + Solid1 + Solid2 + Solid3 + Sweet1 + Sweet2 
+# print (Total)
+
+
+#Liquid1 = "$3.00"
+#Liquid2 = "$2.75"
+#Solid1 = "$7.75"
+#Solid2 = "$5.00"
+#Solid3 = "$10.99"
+#Sweet1 = "$1.00"
+#Sweet2 = "$2.00"
 
 
 
+tax = 0.08875
+tip = input ("What percent tip would you like to give? (15, 20, 25)")
+def cost_order():
+	global subtotal
+	global tip_fraction
+	global total
+	extra_tax = (round(price*tax,2))
+	subtotal = (round(extra_tax + price,2))
+	tip_fraction = (round(int(tip)/100,2))
+	total = (round((subtotal*tip_fraction) + subtotal, 2))
+	print(total)
 
-
-
-
-
+cost_order()
 
 
 
@@ -123,9 +203,25 @@
 
 
 # -------------------------------------------- 
+def food_choice():
+	print (f"{drink} = {drink_cost}")
+	
+	print (f"{food} = {food_cost}")
+	
+	print (f"{sweet} = {sweet_cost}")
 
 
 
+
+def receipt():
+	print ("This is your receipt:")
+	food_choice()
+	print (f"Subtotal:{subtotal}")
+	print (f"Tax:{tax}")
+	print (f"Tip:{tip_fraction}")
+	print (f"Total:{total}")
+	print ("Bye!")
+receipt()
 
 # -------------------------------------------- 
 
