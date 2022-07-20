@@ -40,10 +40,12 @@ print(dictionary)
 
 ##################################  MY dictionary ########################### #/
 
-
-
-
-
+dictionary = {
+    "name": "George Washington",
+    "age": 290,
+    "dead": True,
+    "job": ["President", "Surveyor", "General"]
+}
 
 ########################################################################## #/
 
@@ -53,18 +55,27 @@ print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
 
+#print(dictionary)
 
-#-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
+#-->TODO: Update the dictionary you just created by adding new properties and values, including list elements, in this section.
 
-
+dictionary["birthplace"] = "Virginia"
+dictionary["funfact"] = ["9 siblings", "He was a general for the american revolvution. "]
+dictionary["funfact"].append("He was the first president.")
 #-->TODO: Print your dictionary again and observe changes
 
+print(dictionary)
 
 print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
 
+x = dictionary.get("job")
+print(x)
+
+element = dictionary.pop("age")
+print('The popped element is:', element)
 
 #-->TODO: Call the method.
 
@@ -73,3 +84,5 @@ print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+
+print("")
