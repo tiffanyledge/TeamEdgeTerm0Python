@@ -76,7 +76,7 @@ generator = input ("Ask a question")
 
 	# Look up random.rand_int to see how you can use it to select a random number.
 
-answers = (random.randrange(0, 20))
+answer = (random.randrange(0, 20))
 if answer == 0:
 	print("it is certain")
 elif answer == 1:
@@ -214,7 +214,7 @@ else:
 
 
 
-print ("How to find out what your horoscope says about you")
-print ("type in your horoscope sign")
-print ("the computer will generate a response based on your sign")
+#print ("How to find out what your horoscope says about you")
+#print ("type in your horoscope sign")
+#print ("the computer will generate a response based on your sign")
 
