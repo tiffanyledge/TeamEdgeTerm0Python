@@ -158,9 +158,11 @@ def question():
     answer = input("Would you like to guess who the murder is?")
     if answer == "yes" or "Yes":
         guesses = 0
-        while guesses <= 2:
-            if guesses == "Mom":
+        while guesses <= 1:
+            answer = input("Who do you think the murder is?")
+            if answer == "Mom" or answer == "mom":
                 print("Good job! You found out who the murder is! Hope you enjoyed!")
+                active = False
             else:
                 print("Sorry that's not the murder.")
                 if guesses == 2:
