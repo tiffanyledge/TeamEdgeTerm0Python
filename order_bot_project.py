@@ -117,9 +117,9 @@ def get_food ():
 	elif question == "4":
 		food = Solid2
 		food_cost = 5.00
-	elif Solid3 == "5":
+	elif question == "5":
 		food = Solid3
-		food_cost = 10.99
+		food_cost = 6.75
 def get_snack ():
 	question = input("What snack would you like? (Enter 6 or 7)")
 	global sweet
@@ -141,7 +141,7 @@ get_snack()
 
 price =  food_cost + drink_cost + sweet_cost
 
-print (f"Your total is {price}")
+print (f"Your total is {price}.")
 
 
 # -------------------------------------------- 

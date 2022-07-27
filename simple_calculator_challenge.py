@@ -56,13 +56,13 @@ def sub_numbers(num1,num2):
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
-check_answers(add_numbers(5, 15), 20)
-check_answers(add_numbers(3, 18), 21)
-check_answers(add_numbers(12, 28), 40)
+# check_answers(add_numbers(5, 15), 20)
+# check_answers(add_numbers(3, 18), 21)
+# check_answers(add_numbers(12, 28), 40)
 
-check_answers(sub_numbers(18, 7), 11)
-check_answers(sub_numbers(11, 9), 2)
-check_answers(sub_numbers(18, 21), -3)
+# check_answers(sub_numbers(18, 7), 11)
+# check_answers(sub_numbers(11, 9), 2)
+# check_answers(sub_numbers(18, 21), -3)
 
 # -------------------------------------------- 
 
@@ -96,13 +96,13 @@ def divide_numbers(num1, num2):
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
-check_answers(multiply_numbers(10, 3), 30); 
-check_answers(multiply_numbers(21, 7), 147);
-check_answers(multiply_numbers(4, 16), 64); 
+# check_answers(multiply_numbers(10, 3), 30); 
+# check_answers(multiply_numbers(21, 7), 147);
+# check_answers(multiply_numbers(4, 16), 64); 
 
-check_answers(divide_numbers(24, 100), .24);
-check_answers(divide_numbers(21, 7), 3);
-check_answers(divide_numbers(15, 4), 3.75);
+# check_answers(divide_numbers(24, 100), .24);
+# check_answers(divide_numbers(21, 7), 3);
+# check_answers(divide_numbers(15, 4), 3.75);
 
 # -------------------------------------------- 
 
@@ -115,7 +115,7 @@ check_answers(divide_numbers(15, 4), 3.75);
 
 # -------------------------------------------- 
 def calculator():
-	question = input("What operation would you like to do?")
+	question = input("What operation would you like to do? (addition, subtraction, multiplication, division")
 	num1=int(input("Put in an number:"))
 	num2=int(input("Put in a second number:"))
 	total = 0 
